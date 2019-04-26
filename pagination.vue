@@ -1,3 +1,6 @@
+页面使用：
+<Pagination :initPage="1" :totalPage="10" :showPrev="true" :showNext="true" :showJump="false"/>
+
 <template>
     <div class="pagination">
         <a href="javascript:;" class="previous" :class="{previousDisable: currentPage == 1 ? true : false}" @click="go(currentPage - 1)"></a>
